@@ -219,8 +219,8 @@ const ExistingRooms = () => {
                                 <th>ID</th>
                                 <th>Room Type</th>
                                 <th>Room Price</th>
-                                <th>PgId</th>
-                                <th>PgName</th>
+                                <th>pgId</th>
+                                <th>pgName</th>
                                 <th>Location</th>
                                 <th>Actions</th>
                             </tr>
