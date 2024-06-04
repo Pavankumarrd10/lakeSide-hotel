@@ -3,7 +3,7 @@ import moment from "moment"
 import { useState } from "react"
 import { Form, FormControl, Button } from "react-bootstrap"
 import BookingSummary from "./BookingSummary"
-import { bookRoom, getRoomById } from "../utils/ApiFunctions"
+import { bookRoom, getBookingByConfirmationCode, getRoomById } from "../utils/ApiFunctions"
 import { useNavigate, useParams } from "react-router-dom"
 import { useAuth } from "../auth/AuthProvider"
 
@@ -18,10 +18,10 @@ const currentUser = localStorage.getItem("userId")
 	const [booking, setBooking] = useState({
 		guestFullName: "",
 		guestEmail: currentUser,
-		checkInDate: "",
-		checkOutDate: "",
+		// checkInDate: "",
+		// checkOutDate: "",
 		numOfAdults: "",
-		numOfChildren: ""
+		getBookingByConfirmationCode: ""
 	})
 
 	const { roomId } = useParams()
