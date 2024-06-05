@@ -13,19 +13,19 @@ const BookingForm = () => {
 	const [errorMessage, setErrorMessage] = useState("")
 	const [roomPrice, setRoomPrice] = useState(0)
 
-const currentUser = localStorage.getItem("userId")
+// const currentUser = localStorage.getItem("userId")
 
 	const [booking, setBooking] = useState({
 		guestFullName: "",
 		guestEmail: currentUser,
-		// checkInDate: "",
-		// checkOutDate: "",
+		 checkInDate: "",
+		 checkOutDate: "",
 		numOfAdults: "",
 		getBookingByConfirmationCode: ""
 	})
 
-	const { roomId } = useParams()
-	const navigate = useNavigate()
+	 const { roomId } = useParams()
+	 const navigate = useNavigate()
 
 	const handleInputChange = (e) => {
 		const { name, value } = e.target
@@ -33,6 +33,12 @@ const currentUser = localStorage.getItem("userId")
 		setErrorMessage("")
 	}
 
+
+	const[roomInfo, setRoomInfo] = useState({
+		photo: "",
+		roomType :"",
+		roomPrice : ""
+		})
 
 	const getRoomPriceById = async (roomId) => {
 		try {

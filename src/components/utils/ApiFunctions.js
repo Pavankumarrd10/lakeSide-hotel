@@ -133,6 +133,26 @@ export async function getBookingByConfirmationCode(confirmationCode) {
 	}
 }
 
+/* This is the function to cancel user booking */
+export async function cancelBooking(bookingId) {
+	try {
+		const result = await api.delete(`/bookings/booking/${bookingId}/delete`)
+		return result.data
+	} catch (error) {
+		throw new Error(`Error cancelling booking :${error.message}`)
+	}
+}
+
+// /* This function gets all availavle rooms from the database with a given date and a room type */
+// export async function getAvailableRooms(checkInDate, checkOutDate, roomType) {
+// 	const result = await api.get(
+// 		`rooms/available-rooms?checkInDate=${checkInDate}
+// 		&checkOutDate=${checkOutDate}&roomType=${roomType}`
+// 	)
+// 	return result
+// }
+
+
 // /* This is the function to cancel user booking */
 // export async function cancelBooking(bookingId) {
 // 	try {
