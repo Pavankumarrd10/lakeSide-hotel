@@ -3,11 +3,8 @@ import { Container, Row, Col, Card } from "react-bootstrap"
 import Header from "./Header"
 import {
 	FaClock,
-	FaCocktail,
 	FaParking,
-	FaSnowflake,
-	FaTshirt,
-	FaUtensils,
+	FaBook,
 	FaWifi
 } from "react-icons/fa"
 
@@ -19,7 +16,7 @@ const HotelService = () => {
 
 				<Row className="mt-4">
 					<h4 className="text-center">
-						Services at <span className="hotel-color"> lakeSide - </span>Hotel
+						Services at <span className="hotel-color">  PG  - </span>finder
 						<span className="gap-2">
 							<FaClock className="ml-5" /> 24-Hour Front Desk
 						</span>
@@ -38,33 +35,15 @@ const HotelService = () => {
 							</Card.Body>
 						</Card>
 					</Col>
+					 
+				 
 					<Col>
 						<Card>
 							<Card.Body>
 								<Card.Title className="hotel-color">
-									<FaUtensils /> Breakfast
+								<FaBook /> library
 								</Card.Title>
-								<Card.Text>Start your day with a delicious breakfast buffet.</Card.Text>
-							</Card.Body>
-						</Card>
-					</Col>
-					<Col>
-						<Card>
-							<Card.Body>
-								<Card.Title className="hotel-color">
-									<FaTshirt /> Laundry
-								</Card.Title>
-								<Card.Text>Keep your clothes clean and fresh with our laundry service.</Card.Text>
-							</Card.Body>
-						</Card>
-					</Col>
-					<Col>
-						<Card>
-							<Card.Body>
-								<Card.Title className="hotel-color">
-									<FaCocktail /> Mini-bar
-								</Card.Title>
-								<Card.Text>Enjoy a refreshing drink or snack from our in-room mini-bar.</Card.Text>
+								<Card.Text>A place with study mindset.</Card.Text>
 							</Card.Body>
 						</Card>
 					</Col>
@@ -78,16 +57,7 @@ const HotelService = () => {
 							</Card.Body>
 						</Card>
 					</Col>
-					<Col>
-						<Card>
-							<Card.Body>
-								<Card.Title className="hotel-color">
-									<FaSnowflake /> Air conditioning
-								</Card.Title>
-								<Card.Text>Stay cool and comfortable with our air conditioning system.</Card.Text>
-							</Card.Body>
-						</Card>
-					</Col>
+				 
 				</Row>
 			</div>
 			<hr />
