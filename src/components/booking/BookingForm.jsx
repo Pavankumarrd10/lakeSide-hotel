@@ -5,7 +5,6 @@ import { Form, FormControl, Button } from "react-bootstrap"
 import BookingSummary from "./BookingSummary"
 import { bookRoom, getBookingByConfirmationCode, getRoomById } from "../utils/ApiFunctions"
 import { useNavigate, useParams } from "react-router-dom"
-import { useAuth } from "../auth/AuthProvider"
 
 const BookingForm = () => {
 	const [validated, setValidated] = useState(false)
