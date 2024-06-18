@@ -139,7 +139,7 @@ const BookingForm = () => {
 										value={booking.guestEmail}
 										placeholder="Enter your email"
 										onChange={handleInputChange}
-										disabled
+										// disabled
 									/>
 									<Form.Control.Feedback type="invalid">
 										Please enter a valid email address.
